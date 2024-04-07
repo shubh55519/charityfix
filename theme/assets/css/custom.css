@@ -1,0 +1,105 @@
+
+.header-area .main-menu .listing .menu-item {
+    display: inline-block;
+    position: relative;
+    z-index: 9;
+    margin: 0 16px;
+    cursor: pointer;
+}
+.header-area .main-menu .listing .menu-item a{
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: var(--primary-title);
+    font-weight: 600;
+    display: block;
+    font-size: 16px;
+    padding: 43px 0;
+    text-transform: capitalize;
+}
+.header-area .main-menu .listing .current-menu-item a {
+    position: relative;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: var(--primary);
+}
+.header-area .main-menu .listing .sub-menu {
+    position: absolute;
+    width: 260px;
+    background: var(--white);
+    padding: 21px 0px;
+    left: 0;
+    right: 0;
+    top: 105%;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+    border-top: 3px solid var(--primary);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    z-index: 2;
+}
+.header-area .main-menu .listing .sub-menu > .main-menu {
+    margin: 0px;
+    display: block;
+}
+.header-area .main-menu .listing .sub-menu > .main-menu > a {
+    padding: 6px 18px !important;
+    font-size: 15px;
+    text-transform: capitalize;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0;
+    color: var(--primary-paragraph) !important;
+}
+.header-area .main-menu .listing .menu-item:hover > .sub-menu {
+    visibility: visible;
+    opacity: 1;
+    top: 100%;
+}
+.header-area .main-menu .listing .sub-menu > .menu-item > a {
+    padding: 6px 18px !important;
+    font-size: 15px;
+    text-transform: capitalize;
+    display: -webkit-box;   
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 0;
+    color: var(--primary-paragraph) !important;
+}
+.header-area .main-menu .listing .sub-menu > .menu-item > a:hover {
+    color: var(--primary) !important;
+    letter-spacing: 0.3px;
+}
+.header-area .main-menu .menu-item-has-children > a:after{ 
+    content: "\f078";
+    /* font-family: FontAwesome; */
+    font-family: "Font Awesome 5 Free";
+    /* font-weight: normal; */
+    font-style: normal;
+    margin:0px 0px 0px 10px;
+    text-decoration:none;
+ 
+ } 
+ .header-area .main-menu .listing .menu-item >a{
+    display: block;
+    position: relative;
+    z-index: 9;
+    margin: 0 16px;
+    cursor: pointer;
+}
